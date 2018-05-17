@@ -111,6 +111,7 @@ endif ()
 # Creates(shared static) and names a library given relative sources
 # Gradle automatically packages shared libraries with your APK.
 add_library(
+<<<<<<< e4998467c2d33ac24280ab549ef162fb15058051
         # Sets the name of the library. When it's built you can find it with lib prefix libNativeScript.so
         NativeScript
 
@@ -160,6 +161,57 @@ add_library(
 
         # V8 inspector source files will be included only in Release mode
         ${INSPECTOR_SOURCES}
+=======
+    # Sets the name of the library. When it's built you can find it with lib prefix libNativeScript.so
+    NativeScript
+
+    # Sets the library as a shared library.
+    SHARED
+
+    # Runtime source
+    src/main/cpp/ArgConverter.cpp
+    src/main/cpp/ArrayBufferHelper.cpp
+    src/main/cpp/ArrayElementAccessor.cpp
+    src/main/cpp/ArrayHelper.cpp
+    src/main/cpp/AssetExtractor.cpp
+    src/main/cpp/CallbackHandlers.cpp
+    src/main/cpp/Constants.cpp
+    src/main/cpp/DirectBuffer.cpp
+    src/main/cpp/FieldAccessor.cpp
+    src/main/cpp/File.cpp
+    src/main/cpp/JEnv.cpp
+    src/main/cpp/JType.cpp
+    src/main/cpp/JniSignatureParser.cpp
+    src/main/cpp/JsArgConverter.cpp
+    src/main/cpp/JsArgToArrayConverter.cpp
+    src/main/cpp/Logger.cpp
+    src/main/cpp/ManualInstrumentation.cpp
+    src/main/cpp/MetadataMethodInfo.cpp
+    src/main/cpp/MetadataNode.cpp
+    src/main/cpp/MetadataReader.cpp
+    src/main/cpp/MetadataTreeNode.cpp
+    src/main/cpp/MethodCache.cpp
+    src/main/cpp/ModuleInternal.cpp
+    src/main/cpp/ESModule.cpp
+    src/main/cpp/NativeScriptException.cpp
+    src/main/cpp/NumericCasts.cpp
+    src/main/cpp/ObjectManager.cpp
+    src/main/cpp/Profiler.cpp
+    src/main/cpp/ReadWriteLock.cpp
+    src/main/cpp/Runtime.cpp
+    src/main/cpp/SimpleAllocator.cpp
+    src/main/cpp/SimpleProfiler.cpp
+    src/main/cpp/Util.cpp
+    src/main/cpp/V8GlobalHelpers.cpp
+    src/main/cpp/V8StringConstants.cpp
+    src/main/cpp/WeakRef.cpp
+    src/main/cpp/com_tns_AssetExtractor.cpp
+    src/main/cpp/com_tns_Runtime.cpp
+    src/main/cpp/console/Console.cpp
+
+    # V8 inspector source files will be included only in Release mode
+    ${INSPECTOR_SOURCES}
+>>>>>>> Add experimental support for ES6 modules
 )
 
 if (OPTIMIZED_BUILD OR OPTIMIZED_WITH_INSPECTOR_BUILD)
