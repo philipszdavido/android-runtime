@@ -52,7 +52,7 @@ class InspectedContext {
         }
 
         InjectedScript* getInjectedScript(int sessionId);
-        bool createInjectedScript(int sessionId);
+        InjectedScript* createInjectedScript(int sessionId);
         void discardInjectedScript(int sessionId);
 
     private:

@@ -76,6 +76,7 @@ if (NOT OPTIMIZED_BUILD OR OPTIMIZED_WITH_INSPECTOR_BUILD)
             src/main/cpp/v8_inspector/src/inspector/v8-overlay-agent-impl.cpp
             src/main/cpp/v8_inspector/src/inspector/v8-page-agent-impl.cpp
 
+            src/main/cpp/v8_inspector/src/inspector/custom-preview.cc
             src/main/cpp/v8_inspector/src/inspector/injected-script.cc
             src/main/cpp/v8_inspector/src/inspector/inspected-context.cc
             src/main/cpp/v8_inspector/src/inspector/remote-object-id.cc
@@ -90,7 +91,6 @@ if (NOT OPTIMIZED_BUILD OR OPTIMIZED_WITH_INSPECTOR_BUILD)
             src/main/cpp/v8_inspector/src/inspector/v8-debugger-script.cc
             src/main/cpp/v8_inspector/src/inspector/v8-function-call.cc
             src/main/cpp/v8_inspector/src/inspector/v8-heap-profiler-agent-impl.cc
-            src/main/cpp/v8_inspector/src/inspector/v8-injected-script-host.cc
             src/main/cpp/v8_inspector/src/inspector/v8-inspector-impl.cc
             src/main/cpp/v8_inspector/src/inspector/v8-inspector-session-impl.cc
             src/main/cpp/v8_inspector/src/inspector/v8-internal-value-type.cc
@@ -100,6 +100,7 @@ if (NOT OPTIMIZED_BUILD OR OPTIMIZED_WITH_INSPECTOR_BUILD)
             src/main/cpp/v8_inspector/src/inspector/v8-schema-agent-impl.cc
             src/main/cpp/v8_inspector/src/inspector/v8-stack-trace-impl.cc
             src/main/cpp/v8_inspector/src/inspector/v8-value-utils.cc
+            src/main/cpp/v8_inspector/src/inspector/value-mirror.cc
             src/main/cpp/v8_inspector/src/inspector/wasm-translation.cc
     )
 else ()
